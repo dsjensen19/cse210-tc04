@@ -1,4 +1,4 @@
-from game.player import player
+from game.player import Player
 import random
 
 class Dealer:
@@ -14,12 +14,27 @@ class Dealer:
     """
 
 
+    def __init__():
+        self.card_1 = self.card_2 = 0
+        self.player = player()
+        
 
     def start_game(self):
+        """ runs the main functions of the game in order
+        1) draw first card
+        2) show first card
+        3) ask player higher or lower
+        4) draw second card
+        5) show second card 
+        6) compare cards
+        7) calculate score change and send to player
+        8) ask player if they want to play again
+        """
+        while self.can_deal():
 
-        pass
+        
 
-    def get_card(self,):
+    def get_card(self):
         """Gets the inputs at the beginning of each round of play. In this case,
         that means throwing the dice.
 
@@ -54,7 +69,7 @@ class Dealer:
         """
         guess = self.player.higher_or_lower
 
-    def compare_cards(card_1,card_2, guess):
+    def compare_cards(self, card_1,card_2, guess):
         #guess is boolean, if input = lower then Guess = False
         # if input = Higher then guess = True
         """
@@ -87,3 +102,5 @@ class Dealer:
             elif card_1 < card_2:
                 print(f"{card_2} is bigger than {card_1}")
                 return False
+    def can_deal():
+        return true
