@@ -1,21 +1,14 @@
-<<<<<<< Updated upstream
-# cse210-tc04
-=======
 Dealer function:
 start_game(){
 
 }
-#1st card  =get_card() {
+get_card() {
     return int
-#call player.higher/lower
-#2nd card =get_card()
-#def compare_card()
-call player.keep_playing
 }
 can_deal(bool){
 
 }
- 
+
 Var: card, continue
 
 
@@ -33,4 +26,3 @@ keep_playing(string) {
 }
 Var: score
 
->>>>>>> Stashed changes
