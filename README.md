@@ -25,4 +25,3 @@ keep_playing(string) {
     return bool
 }
 Var: score
-
