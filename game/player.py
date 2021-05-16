@@ -7,7 +7,7 @@ class Player():
     def keep_playing(self):
             #This program recieves input from the user of their gchoice to play or not
         while True:
-            choice = str(input("Keep playing yes or no? [y/n]"))
+            choice = str(input("Keep playing yes or no? [y/n] "))
             if (choice == "y"):
                 return True
             elif (choice == "n"):
@@ -21,7 +21,7 @@ class Player():
         """This program recieves input from the user of their guess and returns True is their guess is 
         higher and False if their guess is lower"""
         while True:
-            guess = str(input("Higher or Lower? [h/l]"))
+            guess = str(input("Higher or Lower? [h/l] "))
             if (guess == "h"):
                 return True
             elif (guess == "l"):
