@@ -3,7 +3,7 @@ class Player():
     """
     def __init__(self):
         self.score = 300
-        self.director = Director()
+
     def keep_playing(self):
         return False
         
@@ -12,7 +12,7 @@ class Player():
         """This program recieves input from the user of their guess and returns True is their guess is 
         higher and False if their guess is lower"""
         while True:
-            guess = str(input("Higher or Lower?" [h/l]"))
+            guess = str(input("Higher or Lower? [h/l]"))
             if (guess == "h"):
                 return True
             elif (guess == "l"):
@@ -22,7 +22,7 @@ class Player():
                 
         return True
         
-    def print_score(self, score):
+    def print_score(self):
         """This program prints the score to the user
         """
         print(f"Your score is {self.score}")

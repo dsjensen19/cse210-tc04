@@ -74,7 +74,7 @@ class Dealer:
     #i made this
     """streamline the printing of card 2"""
     def display_card_2(self):
-        print(f"Your first card is {self.get_card_str(self.card_2)}") 
+        print(f"Your second card is {self.get_card_str(self.card_2)}") 
 
     #
     #note
@@ -133,21 +133,21 @@ class Dealer:
         card_str_2 = self.get_card_str(self.card_2)
         if guess: 
             if self.card_1 == self.card_2:
-                print(f"{card_str_1} is equal to {card_str_2}")
+                print(f"{card_str_2} is equal to {card_str_1}")
                 self.player.score -= 75
             elif self.card_1 > self.card_2:
-                print(f"{card_str_1} is higher than {card_str_2}")
+                print(f"{card_str_2} is lower than {card_str_1}")
                 self.player.score -= 75
             elif self.card_1 < self.card_2:
-                print(f"{card_str_1} is lower than {card_str_2}")
+                print(f"{card_str_2} is higher than {card_str_1}")
                 self.player.score += 100
         if not guess:
             if self.card_1 == self.card_2:
-                print(f"{card_str_1} is equal to {card_str_2}")
+                print(f"{card_str_2} is equal to {card_str_1}")
                 self.player.score -= 75
             elif self.card_1 > self.card_2:
-                print(f"{card_str_1} is higher than {card_str_2}")
+                print(f"{card_str_2} is lower than {card_str_1}")
                 self.player.score += 100
             elif self.card_1 < self.card_2:
-                print(f"{card_str_1} is lower than {card_str_2}")
+                print(f"{card_str_2} is higher than {card_str_1}")
                 self.player.score -= 75
