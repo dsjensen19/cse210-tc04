@@ -5,6 +5,15 @@ class Player():
         self.score = 300
 
     def keep_playing(self):
+            #This program recieves input from the user of their gchoice to play or not
+        while True:
+            choice = str(input("Keep playing yes or no? [y/n]"))
+            if (choice == "y"):
+                return True
+            elif (choice == "n"):
+                return False
+            else:
+                print("Please enter a valid choice")
         return False
         
         
