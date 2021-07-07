@@ -1,3 +1,6 @@
+AUTHOR NAMES: Tyson Brost, Derek Jensen, Seth Burton, Chris Patrinovich
+
+
 Dealer function:
 start_game(){
 
